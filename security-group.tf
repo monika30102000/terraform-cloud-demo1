@@ -1,5 +1,5 @@
 # Create Security Group - SSH Traffic
-resource "aws_security_group" "vpc-ssh" {
+resource "aws_security_group" "vpc-ssh1" {
   name        = "vpc-ssh-${terraform.workspace}"
   description = "Dev VPC SSH"
   ingress {
@@ -19,7 +19,7 @@ resource "aws_security_group" "vpc-ssh" {
 }
 
 # Create Security Group - Web Traffic
-resource "aws_security_group" "vpc-web" {
+resource "aws_security_group" "vpc-web1" {
   name        = "vpc-web-${terraform.workspace}"
   description = "Dev VPC web"
   ingress {
